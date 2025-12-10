@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C++ Course Curriculum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f9;
+        }
+
+        header {
+            background: #1f3c88;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 15px 30px;
+        }
+
+        .course-info {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .course-info h2 {
+            margin-top: 0;
+            color: #1f3c88;
+        }
+
+        .info-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .info-box {
+            flex: 1 1 200px;
+            background: #f9fafb;
+            border-radius: 6px;
+            padding: 10px 15px;
+        }
+
+        .info-box h3 {
+            margin: 0 0 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        .module {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .module-title {
+            font-size: 18px;
+            color: #1f3c88;
+            font-weight: bold;
+        }
+
+        .module-week {
+            font-size: 13px;
+            background: #e3e9ff;
+            color: #1f3c88;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .module ul {
+            margin: 0;
+            padding-left: 18px;
+            font-size: 14px;
+        }
+
+        .module ul li {
+            margin-bottom: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Introduction to C++ Programming</h1>
+    <p>Course Curriculum</p>
+</header>
+
+<div class="container">
+
+    <!-- Course Info -->
+    <section class="course-info">
+        <h2>Course Overview</h2>
+        <p>
+            This course introduces the fundamentals of C++ programming, from basic syntax and data types
+            to object-oriented programming, STL, and file handling. By the end of this course, students
+            will be able to design, implement, and debug C++ programs.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <h3>Duration</h3>
+                <p>10–12 Weeks</p>
+            </div>
+            <div class="info-box">
+                <h3>Prerequisites</h3>
+                <p>Basic knowledge of computers, logic, and mathematics</p>
+            </div>
+            <div class="info-box">
+                <h3>Level</h3>
+                <p>Beginner to Intermediate</p>
+            </div>
+            <div class="info-box">
+                <h3>Tools</h3>
+                <p>Any C++ Compiler (GCC, MinGW, Turbo C++, etc.) &amp; IDE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module 1 -->
+    <section class="module">
+        <div class="module-header">
+            <div class="module-title">Module 1: Introduction &amp; Basics of C++</div>
+            <div class="module-week">Week 1</div>
+        </div>
+        <ul>
+            <li>History and features of C++</li>
+            <li>Structure of a C++ program</li>
+            <li>Compiling and running a C++ program</li>
+            <li>Header files, main() function, comments</li>
+            <li>Input and output (cin, cout)</li>
+        </ul>
+    </section>
+
+    <!-- Module 2 -->
+    <section class="module">
+        <div class="module-header">
+            <div class="module-title">Module 2: Data Types, Operators &amp; Control Statements</div>
+            <div class="module-week">Week 2–3</div>
+        </div>
+        <ul>
+            <li>Variables and constants</li>
+            <li>Data types (int, float, char, bool, etc.)</li>
+            <li>Type casting</li>
+            <li>Arithmetic, relational, logical, and bitwise operators</li>
+            <li>Conditional statements (if, if-else, switch)</li>
+            <li>Loops (for, while, do-while)</li>
+            <li>Break, continue, and goto (theory)</li>
+        </ul>
+    </section>
+
+    <!-- Module 3 -->
+    <section class="module">
+        <div class="module-header">
+            <div class="module-title">Module 3: Functions &amp; Arrays</div>
+            <div class="module-week">Week 4–5</div>
+        </div>
+        <ul>
+            <li>Function declaration and definition</li>
+            <li>Call by value and call by reference</li>
+            <li>Inline functions and default arguments</li>
+            <li>1D and 2D arrays</li>
+            <li>String handling in C++ (C-style and std::string)</li>
+        </ul>
+    </section>
+
+    <!-- Module 4 -->
+    <section class="module">
+        <div class="module-header">
+            <div class="module-title">Module 4: Pointers &amp; Dynamic Memory</div>
+            <div class="module-week">Week 6</div>
+        </div>
+        <ul>
+            <li>Pointer basics and pointer arithmetic</li>
+            <li>Pointers and arrays</li>
+            <li>Pointers and functions</li>
+            <li>Dynamic memory allocation (new, delete)</li>
+        </ul>
+    </section>
+
+    <!-- Module 5 -->
+    <section class="module">
+        <div class="module-header">
+            <div class="module-title">Module 5: Object-Oriented Programming in C++</div>
+            <div class="module-week">Week 7–8</div>
+        </div>
+        <ul>
+            <li>Classes and objects</li>
+            <li>Access specifiers (public, private, protected)</li>
+            <li>Constructors and destructors</li>
+            <li>Inheritance (single, multiple, multilevel)</li>
+            <li>Polymorphism (function overloading, operator overloading)</li>
+            <li>Virtual functions and introduction to runtime polymorphism</li>
+        </ul>
+    </section>
+
+    <!-- Module 6 -->
+    <section class="module">
+        <div class="module-header">
+            <div class="module-title">Module 6: Templates, Exception Handling &amp; STL</div>
+            <div class="module-week">Week 9–10</div>
+        </div>
+        <ul>
+            <li>Function templates and class templates</li>
+            <li>Exception handling (try, catch, throw)</li>
+            <li>Introduction to Standard Template Library (STL)</li>
+            <li>Vectors, lists, stacks, queues, maps (basic usage)</li>
+        </ul>
+    </section>
+
+    <!-- Module 7 -->
+    <section class="module">
+        <div class="module-header">
+            <div class="module-title">Module 7: File Handling &amp; Project</div>
+            <div class="module-week">Week 11–12</div>
+        </div>
+        <ul>
+            <li>File streams (ifstream, ofstream, fstream)</li>
+            <li>Reading from and writing to files</li>
+            <li>Binary file operations (basic)</li>
+            <li>Mini Project in C++ combining all concepts</li>
+            <li>Revision and practice problems</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2025 C++ Programming Course Curriculum
+</footer>
+
+</body>
+</html>
