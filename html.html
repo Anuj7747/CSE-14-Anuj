@@ -1,0 +1,95 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Simple E-Commerce Web Page</title>
+    <style>
+        /* Basic CSS for B.Tech 1st Year */
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .product img {
+            width: 100%;
+            height: 150px;
+        }
+        .product button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 8px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .cart {
+            background-color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body><header>
+    <h1>My Simple E-Commerce Website</h1>
+</header><div class="container">
+    <h2>Products</h2><div class="product">
+    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+    <h3>T-Shirt</h3>
+    <p>Price: ₹500</p>
+    <button onclick="addToCart(500)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+    <h3>Headphones</h3>
+    <p>Price: ₹1200</p>
+    <button onclick="addToCart(1200)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
+    <h3>Watch</h3>
+    <p>Price: ₹2500</p>
+    <button onclick="addToCart(2500)">Add to Cart</button>
+</div>
+
+<div class="cart">
+    <h2>Cart Total</h2>
+    <p>Total Amount: ₹ <span id="total">0</span></p>
+</div>
+
+</div><footer>
+    B.Tech 1st Year | Simple E-Commerce Project
+</footer><script>
+    var total = 0;
+    function addToCart(price) {
+        total = total + price;
+        document.getElementById("total").innerHTML = total;
+    }
+</script></body>
+</html>
