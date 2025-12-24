@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Saddi.com</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#b30059;
+    color:white;
+}
+
+header h1 span{
+    color:#ffd6e8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+/* Hero */
+.hero{
+    height:90vh;
+    background:url("https://images.unsplash.com/photo-1523438885200-e635ba2c371e") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-text{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero button{
+    margin-top:15px;
+    padding:10px 25px;
+    border:none;
+    background:#ff4da6;
+    color:white;
+    font-size:16px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+/* Section */
+section{
+    padding:50px;
+    text-align:center;
+}
+
+.about, .services{
+    background:#fff0f6;
+}
+
+/* Services */
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.service-box div{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:220px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+.gallery .images{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.gallery img{
+    width:220px;
+    height:160px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+/* Video */
+.video video{
+    width:60%;
+    border-radius:10px;
+}
+
+/* Footer */
+footer{
+    background:#b30059;
+    color:white;
+    padding:30px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+    nav{
+        margin-top:10px;
+    }
+    .video video{
+        width:90%;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Kushwaha's Sadhi<span> Marriage</span></h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Find Your Perfect Life Partner</h2>
+        <p>Trusted Marriage & Matchmaking Platform</p>
+        <button>Register Now</button>
+    </div>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        Kushwaha Sadhi Marriage.com helps you find your perfect life partner
+        with verified profiles and complete privacy.
+    </p>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+        <div>✔ Verified Profiles</div>
+        <div>✔ Secure Privacy</div>
+        <div>✔ Wedding Planning</div>
+    </div>
+</section>
+
+<section class="gallery">
+    <h2>Happy Couples</h2>
+    <div class="images">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+        <img src="https://images.unsplash.com/photo-1520857014576-2c4f4c972b57">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+    </div>
+</section>
+
+<section class="video">
+    <h2>Wedding Moments</h2>
+    <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    </video>
+</section>
+
+<footer>
+    <h3>Contact Us</h3>
+    <p>Email: Kushwahasadhi@marriage.com</p>
+    <p>Phone: +91 9087679890</p>
+</footer>
+
+</body>
+</html>
+<br>
+<h1>Anuj Kumar Kushwaha</h1>
+<h1>2025B01010178</h1>
+<h1>Cse-14 </h1>
